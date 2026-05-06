@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عقارات فاخرة | القاهرة الجديدة وزايد</title>
-    <meta name="description" content="استكشف أفضل العقارات الفاخرة في القاهرة الجديدة والشيخ زايد.">
+    <title>عقارات فاخرة | أرقى مناطق مصر</title>
+    <meta name="description" content="استكشف أفضل العقارات الفاخرة في القاهرة الجديدة، الشيخ زايد، 6 أكتوبر، العين السخنة، الساحل الشمالي، والعاصمة الإدارية.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
             border-radius: 4px;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('assets/hero_bg.png');
+            background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('assets/hero_bg.avif');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -84,11 +84,11 @@
     <section id="home" class="hero-bg min-h-screen flex items-center justify-center pt-20 relative">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-navy/95"></div>
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-                حياة الفخامة في <br/> <span class="text-gold">القاهرة الجديدة وزايد</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-normal md:leading-relaxed drop-shadow-lg">
+                حياة الفخامة في <br/> <span class="text-gold">أرقى مناطق مصر</span>
             </h1>
-            <p class="text-lg md:text-2xl text-gray-200 mb-10 font-light">
-                اكتشف أرقى الفيلات والشقق السكنية المصممة لراحتك وتميزك. استثمارك الآمن يبدأ من هنا.
+            <p class="text-lg md:text-2xl text-gray-200 mb-10 font-light leading-relaxed">
+                اكتشف ارقى المشاريع السكنية والتجارية والإدارية في كل الوجهات داخل وخارج مصر، بمقدمات 5% وخطط سداد تصل حتى 14 سنة، استثمارك الآمن من هنا
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#projects" class="bg-gold hover:bg-lightGold text-navy px-8 py-4 rounded-full font-bold text-lg transition-all shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:scale-105">
@@ -111,78 +111,110 @@
     <!-- Projects Gallery -->
     <section id="projects" class="py-24 bg-offwhite">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">أحدث <span class="text-gold">مشاريعنا</span></h2>
-                <div class="w-24 h-1 bg-gold mx-auto rounded"></div>
-                <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-                    نقدم لك مجموعة منتقاة من أفضل المشاريع العقارية في أرقى أحياء مصر، بتشطيبات عالمية وتصميمات عصرية.
-                </p>
+            <div id="destinations-view">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">اختر <span class="text-gold">وجهتك</span></h2>
+                    <div class="w-24 h-1 bg-gold mx-auto rounded"></div>
+                    <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+                        اكتشف أفضل المشاريع العقارية لأهم المطورين في أرقى الوجهات في مصر.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- New Cairo -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer" onclick="showDestinationProjects('new_cairo', 'القاهرة الجديدة')">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="assets/new_cairo.avif" alt="القاهرة الجديدة" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors">القاهرة الجديدة</h3>
+                        </div>
+                    </div>
+
+                    <!-- Sheikh Zayed -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer" onclick="showDestinationProjects('zayed', 'الشيخ زايد')">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="assets/zayed.avif" alt="الشيخ زايد" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors">الشيخ زايد</h3>
+                        </div>
+                    </div>
+
+                    <!-- 6th of October -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer" onclick="showDestinationProjects('october', '6 أكتوبر')">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="assets/october.avif" alt="6 أكتوبر" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors">6 أكتوبر</h3>
+                        </div>
+                    </div>
+
+                    <!-- North Coast -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer" onclick="showDestinationProjects('north_coast', 'الساحل الشمالي')">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="assets/north_coast.avif" alt="الساحل الشمالي" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors">الساحل الشمالي</h3>
+                        </div>
+                    </div>
+
+                    <!-- Ain Sokhna -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer" onclick="showDestinationProjects('sokhna', 'العين السخنة')">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="assets/sokhna.avif" alt="العين السخنة" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors">العين السخنة</h3>
+                        </div>
+                    </div>
+
+                    <!-- New Capital -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer" onclick="showDestinationProjects('new_capital', 'العاصمة الإدارية الجديدة')">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="assets/new_capital.avif" alt="العاصمة الإدارية الجديدة" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors">العاصمة الإدارية الجديدة</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of destinations-view -->
+
+            <!-- Developers View -->
+            <div id="developers-view" class="hidden">
+                <div class="mb-10 flex flex-col md:flex-row items-center justify-between border-b border-gray-200 pb-6 gap-4">
+                    <button onclick="backToDestinations()" class="flex items-center gap-2 text-navy hover:text-gold font-bold transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        العودة للوجهات
+                    </button>
+                    <h2 class="text-3xl md:text-4xl font-bold text-navy text-center flex-1">أهم المطورين في <span id="developers-dest-title" class="text-gold"></span></h2>
+                    <div class="w-24 md:w-auto"></div>
+                </div>
+                
+                <div id="developers-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Developers will be injected here -->
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="assets/project_1.png" alt="شقة فاخرة في الشيخ زايد" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-navy/90 backdrop-blur text-gold px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                            الشيخ زايد
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">شقق فندقية فاخرة</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-2">تصميمات داخلية عصرية مع إضاءة طبيعية وإطلالات بانورامية في قلب الشيخ زايد.</p>
-                        <div class="flex justify-between items-center border-t border-gray-100 pt-4">
-                            <span class="text-navy font-bold">بمقدم يبدأ من 10%</span>
-                            <a href="#contact" class="text-gold hover:text-navy font-bold transition-colors flex items-center gap-1">
-                                التفاصيل
-                                <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
+            <!-- Dedicated Projects View -->
+            <div id="projects-view" class="hidden">
+                <div class="mb-10 flex flex-col md:flex-row items-center justify-between border-b border-gray-200 pb-6 gap-4">
+                    <button onclick="backToDevelopers()" class="flex items-center gap-2 text-navy hover:text-gold font-bold transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        العودة للمطورين
+                    </button>
+                    <h2 class="text-3xl md:text-4xl font-bold text-navy text-center flex-1">مشاريع <span id="destination-title" class="text-gold"></span></h2>
+                    <div class="w-24 md:w-auto"></div>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="assets/project_2.png" alt="قصر فاخر" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-navy/90 backdrop-blur text-gold px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                            التجمع الخامس
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">فيلات القصور</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-2">فيلات مستقلة بتصميم عربي حديث مع حمامات سباحة خاصة ومساحات خضراء شاسعة.</p>
-                        <div class="flex justify-between items-center border-t border-gray-100 pt-4">
-                            <span class="text-navy font-bold">تسهيلات حتى 8 سنوات</span>
-                            <a href="#contact" class="text-gold hover:text-navy font-bold transition-colors flex items-center gap-1">
-                                التفاصيل
-                                <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="assets/project_3.png" alt="توين هاوس مودرن" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-navy/90 backdrop-blur text-gold px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                            القاهرة الجديدة
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">توين هاوس مودرن</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-2">وحدات توين هاوس بتشطيبات راقية ولاند سكيب رائع لتجربة سكنية استثنائية.</p>
-                        <div class="flex justify-between items-center border-t border-gray-100 pt-4">
-                            <span class="text-navy font-bold">استلام خلال 6 أشهر</span>
-                            <a href="#contact" class="text-gold hover:text-navy font-bold transition-colors flex items-center gap-1">
-                                التفاصيل
-                                <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
+                
+                <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Projects will be injected here -->
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -236,7 +268,7 @@
                 <div class="lg:w-1/2 w-full">
                     <div class="relative">
                         <div class="absolute inset-0 bg-gold rounded-2xl transform rotate-3 scale-105 opacity-30"></div>
-                        <img src="assets/project_1.png" alt="خبرة العقارات" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                        <img src="assets/project_1.avif" alt="خبرة العقارات" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
                         <div class="absolute -bottom-10 -right-10 bg-white p-6 rounded-2xl shadow-xl border-r-4 border-gold z-20">
                             <div class="text-4xl font-black text-navy mb-1">+1000</div>
                             <div class="text-gray-600 font-bold">عميل سعيد</div>
@@ -252,7 +284,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-navy rounded-3xl overflow-hidden shadow-2xl relative">
                 <!-- Background decorative image overlay -->
-                <div class="absolute top-0 right-0 w-full h-full opacity-10" style="background-image: url('assets/hero_bg.png'); background-size: cover; background-position: center;"></div>
+                <div class="absolute top-0 right-0 w-full h-full opacity-10" style="background-image: url('assets/hero_bg.avif'); background-size: cover; background-position: center;"></div>
                 
                 <div class="flex flex-col lg:flex-row relative z-10">
                     <div class="lg:w-5/12 p-10 lg:p-16 text-white bg-navy/90 backdrop-blur-sm border-l border-gold/20">
@@ -300,8 +332,12 @@
                             <div>
                                 <label for="interest" class="block text-sm font-bold text-navy mb-2">الاهتمام</label>
                                 <select id="interest" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition-all bg-white">
-                                    <option value="new_cairo">فيلات القاهرة الجديدة</option>
-                                    <option value="zayed">شقق الشيخ زايد</option>
+                                    <option value="new_cairo">القاهرة الجديدة</option>
+                                    <option value="zayed">الشيخ زايد</option>
+                                    <option value="october">6 أكتوبر</option>
+                                    <option value="sokhna">العين السخنة</option>
+                                    <option value="north_coast">الساحل الشمالي</option>
+                                    <option value="new_capital">العاصمة الإدارية الجديدة</option>
                                     <option value="commercial">تجاري وإداري</option>
                                     <option value="other">أخرى</option>
                                 </select>
@@ -345,5 +381,738 @@
         <span class="absolute top-1/2 -translate-y-1/2 right-full mr-4 bg-gray-900 text-white text-sm px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">تواصل عبر واتساب</span>
     </a>
 
+    <script>
+        const devLogos = {
+            'mountainview': 'mountainviewegypt.com',
+            'palmhills': 'palmhillsdevelopments.com',
+            'sodic': 'sodic.com',
+            'emaar': 'emaar.com',
+            'ora': 'oradevelopers.com',
+            'madinetmasr': 'madinetmasr.com',
+            'majidalfuttaim': 'majidalfuttaim.com',
+            'alahlysabbour': 'alahlysabbour.com',
+            'nile': 'niledevelopments.com',
+            'orascom': 'orascom.com',
+            'ccr': 'ccr-developments.com',
+            'misritalia': 'misritaliaproperties.com',
+            'tatweermisr': 'tatweermisr.com',
+            'hydepark': 'hydeparkdevelopments.com',
+            'cityedge': 'cityedgedevelopments.com',
+            'lmd': 'lmd.com.eg',
+            'tmg': 'tmg.com.eg'
+        };
+
+        const defaultLogo = 'https://ui-avatars.com/api/?name=Real+Estate&background=0A192F&color=D4AF37';
+        const getLogo = (devId) => {
+            if(devLogos[devId]) return 'https://www.google.com/s2/favicons?domain=' + devLogos[devId] + '&sz=256';
+            return defaultLogo;
+        };
+
+        const projectImages = [
+            'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+            'https://images.unsplash.com/photo-1600607687931-cebf0746e48e?w=800&q=80',
+            'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+            'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
+            'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80',
+            'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80',
+            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
+            'https://images.unsplash.com/photo-1613490908571-9c6bc76bb549?w=800&q=80',
+            'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?w=800&q=80'
+        ];
+
+        const getProjectImage = (name) => {
+            let hash = 0;
+            for (let i = 0; i < name.length; i++) {
+                hash = name.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            return projectImages[Math.abs(hash) % projectImages.length];
+        };
+
+        const developersProfiles = {
+            'mountainview': { name: 'ماونتن فيو', desc: 'تتميز بمشاريعها ذات التصميم المعماري الفريد والمساحات الخضراء الشاسعة، تقدم تجربة سكنية مبتكرة.', payment: 'مقدم يبدأ من 5% وأقساط تصل إلى 8 سنوات.' },
+            'palmhills': { name: 'بالم هيلز', desc: 'من كبرى شركات التطوير في مصر، تبني مجتمعات متكاملة ومستدامة بأعلى معايير الجودة.', payment: 'مقدم 5% وتسهيلات في السداد تصل إلى 10 سنوات.' },
+            'sodic': { name: 'سوديك', desc: 'معروفة بمشاريعها الراقية والمبتكرة التي تلبي احتياجات العملاء الباحثين عن التميز والرقي.', payment: 'مقدم 5% وأقساط متساوية حتى 8 سنوات.' },
+            'emaar': { name: 'إعمار مصر', desc: 'رائدة التطوير العقاري عالمياً، تقدم أسلوب حياة فاخر ومجتمعات نابضة بالحياة في مصر.', payment: 'مقدم 5% وخطة دفع ميسرة تصل إلى 8 سنوات.' },
+            'ora': { name: 'أورا ديفيلوبرز', desc: 'بقيادة المهندس نجيب ساويرس، تقدم مشاريع استثنائية تجمع بين الفخامة والطبيعة الخلابة.', payment: 'مقدم 5% وأقساط مرنة تصل إلى 8 سنوات.' },
+            'madinetmasr': { name: 'مدينة مصر', desc: 'صاحبة التاريخ الطويل في تطوير القاهرة وتحديثها بمجتمعات سكنية عصرية ومتكاملة.', payment: 'مقدم 5% وفترات سداد مريحة حتى 10 سنوات.' },
+            'majidalfuttaim': { name: 'ماجد الفطيم', desc: 'مطور عالمي يقدم تجارب حياة متكاملة تجمع بين السكن الراقي والترفيه والتسوق.', payment: 'مقدم 5% وأقساط على مدار 8 سنوات.' },
+            'alahlysabbour': { name: 'الأهلي صبور', desc: 'تاريخ طويل من الثقة وبناء مشاريع أيقونية ترضي كافة أذواق العائلة المصرية.', payment: 'مقدم يبدأ من 5% وأقساط حتى 10 سنوات.' },
+            'nile': { name: 'النيل للتطوير', desc: 'تتميز ببناء ناطحات السحاب والمشاريع التجارية والإدارية الضخمة في العاصمة الإدارية.', payment: 'مقدم 10% وأقساط ممتدة حتى 10 سنوات.' },
+            'orascom': { name: 'أوراسكوم', desc: 'تطور مدناً سياحية وسكنية متكاملة بلمسة عالمية مثل الجونة وأو ويست ومكادي هايتس.', payment: 'مقدم 5% وتقسيط يصل إلى 9 سنوات.' },
+            'tatweermisr': { name: 'تطوير مصر', desc: 'تدمج الابتكار والتصميم المعماري في وجهات ساحلية وسكنية فريدة من نوعها.', payment: 'مقدم يبدأ من 5% وأقساط حتى 10 سنوات.' },
+            'misritalia': { name: 'مصر إيطاليا', desc: 'تقدم تصميمات مستوحاة من الطراز الإيطالي مع التركيز على الطبيعة والابتكار.', payment: 'مقدم 5% وأقساط تصل إلى 9 سنوات.' },
+            'hydepark': { name: 'هايد بارك', desc: 'معروفة بمساحاتها الخضراء الواسعة ومشاريعها المتميزة في القاهرة الجديدة وأكتوبر.', payment: 'مقدم 5% وأقساط تصل إلى 8 سنوات.' },
+            'cityedge': { name: 'سيتي إيدج', desc: 'شركة وطنية تقدم مشاريع قومية وأبراج سكنية فاخرة في المدن الجديدة.', payment: 'مقدم 5% وأقساط تصل إلى 10 سنوات.' },
+            'tmg': { name: 'مجموعة طلعت مصطفى', desc: 'أكبر مطور عقاري في مصر والشرق الأوسط، مطور مدن متكاملة مثل مدينتي والرحاب وسيليا.', payment: 'مقدمات بسيطة وفترات سداد تمتد حتى 14 سنة.' },
+            'lmd': { name: 'LMD', desc: 'تتخصص في تطوير مشاريع سكنية وتجارية فاخرة بمواقع استراتيجية وتصاميم عصرية.', payment: 'مقدم 10% وأقساط حتى 8 سنوات.' }
+        };
+
+        const destinationsData = {
+    "new_cairo": [
+        {
+            "dev": "emaar",
+            "projects": [
+                {
+                    "name": "ميفيدا (Mivida)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">890 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في المربع الذهبي (Golden Square) بقلب التجمع الخامس</li><li>يبعد 5 دقائق عن الجامعة الأمريكية (AUC)</li><li>يبعد 15 دقيقة عن مصر الجديدة ومدينة نصر</li><li>يقع على بعد 10 دقائق من العاصمة الإدارية الجديدة ومطار القاهرة</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية تتراوح مساحاتها بين 130م و 250م</li><li>توين هاوس بمساحات تبدأ من 270م إلى 350م</li><li>تاون هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة بمساحات تبدأ من 350م وتصل إلى 700م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 12,000,000 جنيه</li><li>التاون هاوس يبدأ من 25,000,000 جنيه</li><li>التوين هاوس يبدأ من 30,000,000 جنيه</li><li>الفيلات المستقلة تبدأ من 45,000,000 جنيه</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>حديقة مركزية شاسعة (Central Park) بمساحة 30 فدان</li><li>مدارس دولية كبرى مثل Repton و Evolve</li><li>نادي رياضي واجتماعي متكامل يمتد على مساحة 33 فدان</li><li>بوليفارد تجاري يضم أرقى الماركات العالمية</li><li>مجمع طبي متكامل وعيادات بمستوى عالمي</li><li>نظام أمني متطور وكاميرات مراقبة على مدار 24 ساعة</li><li>بحيرات صناعية ولاند سكيب يغطي 80% من المشروع</li><li>مسارات مخصصة لركوب الدراجات والمشي</li><li>كلوب هاوس فاخر لكل حي سكني</li><li>مراكز أعمال ومكاتب إدارية مجهزة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط متساوية حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "sodic",
+            "projects": [
+                {
+                    "name": "فيليت (Villette)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">300 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في قلب التجمع الخامس بالقرب من شارع التسعين</li><li>على بُعد مسافة قصيرة من الجامعة الأمريكية (AUC)</li><li>يبعد 20 دقيقة عن مطار القاهرة الدولي</li><li>قريب جداً من العاصمة الإدارية وطريق العين السخنة</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>فيلات مستقلة بمساحات من 300م إلى 750م</li><li>توين هاوس بمساحات تبدأ من 250م</li><li>تاون هاوس بمساحات تبدأ من 220م</li><li>سكاي كوندوز (Sky Condos) بمساحات تبدأ من 150م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 10,000,000 جنيه</li><li>التاون هاوس يبدأ من 22,000,000 جنيه</li><li>التوين هاوس يبدأ من 28,000,000 جنيه</li><li>الفيلات المستقلة تبدأ من 40,000,000 جنيه</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>نادي رياضي ضخم على مساحة 30 فدان</li><li>4 حدائق مركزية متخصصة بتصميمات مختلفة</li><li>مسارات مخصصة للجري والدراجات الهوائية</li><li>عيادات طبية وصيدليات على مدار الساعة</li><li>منطقة تجارية تضم مطاعم وكافيهات عالمية</li><li>حمامات سباحة أولمبية ومغطاة</li><li>أمن وحراسة بوابات إلكترونية ذكية</li><li>مسجد كبير لخدمة السكان</li><li>كلوب هاوس لكل مرحلة</li><li>مناطق ترفيهية مخصصة للأطفال (Kids Area)</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 7 سنوات"
+                },
+                {
+                    "name": "إيستاون (Eastown)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">200 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>ملاصق تماماً للجامعة الأمريكية بالقاهرة (AUC)</li><li>واجهة مباشرة على شارع التسعين الجنوبي</li><li>يبعد 15 دقيقة عن مطار القاهرة الدولي</li><li>سهولة الوصول من الطريق الدائري ومحور المشير</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية تتراوح مساحاتها بين 130م و 220م</li><li>دوبلكس بمساحات تبدأ من 236م إلى 315م</li><li>بنتهاوس مع روف خاص</li><li>وحدات تجارية وإدارية</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 9,000,000 جنيه</li><li>الدوبلكس يبدأ من 15,000,000 جنيه</li><li>البنتهاوس يبدأ من 18,000,000 جنيه</li><li>التجاري بأسعار تنافسية تناسب الاستثمار</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>ممشى تجاري (Commercial Promenade) مليء بالمطاعم</li><li>مساحات خضراء تغطي الجزء الأكبر من المشروع</li><li>نادي رياضي واجتماعي متكامل</li><li>مدارس وحضانات دولية</li><li>مركز طبي متطور</li><li>جراجات تحت الأرض لجميع العمارات</li><li>تصميم معماري عصري وعملي</li><li>أمن وحراسة على مدار الساعة 24/7</li><li>مناطق للشواء والحفلات الخارجية</li><li>محلات تجارية وسوبر ماركت لخدمة السكان</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "palmhills",
+            "projects": [
+                {
+                    "name": "بالم هيلز نيو كايرو",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في التجمع الخامس بالقرب من العاصمة الإدارية</li><li>يبعد 15 دقيقة عن الجامعة الأمريكية</li><li>يقع على الدائري الأوسطي مباشرة</li><li>يبعد 5 دقائق عن مدينتي وطريق السويس</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية بمساحات من 150م إلى 250م</li><li>فيلات مستقلة تبدأ من 300م إلى 600م</li><li>توين هاوس تبدأ من 260م</li><li>تاون هاوس تبدأ من 200م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 8,500,000 جنيه</li><li>التاون هاوس يبدأ من 18,000,000 جنيه</li><li>التوين هاوس يبدأ من 24,000,000 جنيه</li><li>الفيلات المستقلة تبدأ من 35,000,000 جنيه</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>فندق 5 نجوم يقدم خدمات عالمية</li><li>مدارس دولية معتمدة</li><li>ملاعب جولف وتنس بمواصفات قياسية</li><li>مساحات خضراء وبحيرات صناعية بنسبة 82%</li><li>منطقة تجارية (Commercial Area) ضخمة</li><li>كلوب هاوس فاخر لكل مرحلة</li><li>مناطق مخصصة للأطفال</li><li>أمن وكاميرات مراقبة حديثة</li><li>مسارات للجري والدراجات</li><li>تطبيق ذكي لإدارة خدمات الكمبوند</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "mountainview",
+            "projects": [
+                {
+                    "name": "ماونتن فيو آي سيتي",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في التجمع الخامس بالقرب من الهايد بارك</li><li>يبعد دقائق عن شارع التسعين الرئيسي</li><li>قريب جداً من الدائري الأوسطي وطريق السويس</li><li>على بعد 15 دقيقة من مطار القاهرة</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق (Millennial) بمساحات تبدأ من 100م</li><li>آي فيلا (iVilla) بمساحات من 180م إلى 280م</li><li>فيلات مستقلة تبدأ من 250م</li><li>قصور (Palaces) تبدأ من 400م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 7,000,000 جنيه</li><li>الآي فيلا تبدأ من 14,000,000 جنيه</li><li>الفيلات المستقلة تبدأ من 25,000,000 جنيه</li><li>القصور تبدأ من 45,000,000 جنيه</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>كورنيش سياحي بطول 15 كم</li><li>بارك مركزي ضخم مساحته 60 فدان</li><li>نظام فصل حركة السيارات عن المشاة (No Cars Zone)</li><li>كلوب هاوس لكل حي</li><li>مدارس دولية</li><li>منطقة تجارية ومطاعم</li><li>بحيرات صناعية ولاند سكيب</li><li>حمامات سباحة متنوعة</li><li>جيم وسبا متكامل</li><li>تكنولوجيا المنازل الذكية</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 9 سنوات"
+                },
+                {
+                    "name": "ماونتن فيو هايد بارك",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">200 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "madinetmasr",
+            "projects": [
+                {
+                    "name": "تاج سيتي",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">900 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 10 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "majidalfuttaim",
+            "projects": [
+                {
+                    "name": "كايرو فيستيفال سيتي",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">700 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط متساوية حتى 5 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "alahlysabbour",
+            "projects": [
+                {
+                    "name": "لاميرادا",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">77 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 8 سنوات"
+                },
+                {
+                    "name": "آريا",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">108 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 9 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "ora",
+            "projects": [
+                {
+                    "name": "زيد إيست",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">400 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط على 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "hydepark",
+            "projects": [
+                {
+                    "name": "هايد بارك",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">1200 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "lmd",
+            "projects": [
+                {
+                    "name": "ستيت (Stei8ht)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط تصل إلى 7 سنوات"
+                }
+            ]
+        }
+    ],
+    "zayed": [
+        {
+            "dev": "ora",
+            "projects": [
+                {
+                    "name": "زيد ويست",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">165 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 8 سنوات"
+                },
+                {
+                    "name": "سولانا (Solana)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">316 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "emaar",
+            "projects": [
+                {
+                    "name": "كايرو جيت",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">133 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط متساوية حتى 8 سنوات"
+                },
+                {
+                    "name": "بيل ڤي (Belle Vie)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "sodic",
+            "projects": [
+                {
+                    "name": "ذا إستيتس",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">150 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 8 سنوات"
+                },
+                {
+                    "name": "بيفرلي هيلز",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">1.75 مليون متر مربع</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "palmhills",
+            "projects": [
+                {
+                    "name": "بالم باركس",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">113 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "tatweermisr",
+            "projects": [
+                {
+                    "name": "ريفرز (Rivers)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">100 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "mountainview",
+            "projects": [
+                {
+                    "name": "ماونتن فيو زايد",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">214 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 9 سنوات"
+                }
+            ]
+        }
+    ],
+    "october": [
+        {
+            "dev": "palmhills",
+            "projects": [
+                {
+                    "name": "باديا (Badya)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">3000 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "بدون مقدم وأقساط حتى 10 سنوات"
+                },
+                {
+                    "name": "بالم هيلز أكتوبر",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">2 مليون متر مربع</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "mountainview",
+            "projects": [
+                {
+                    "name": "ماونتن فيو تشيل أوت",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">229 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 9 سنوات"
+                },
+                {
+                    "name": "آي سيتي أكتوبر",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 9 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "orascom",
+            "projects": [
+                {
+                    "name": "أو ويست (O West)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">1000 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 9 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "alahlysabbour",
+            "projects": [
+                {
+                    "name": "كيفا (Keeva)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">144 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "hydepark",
+            "projects": [
+                {
+                    "name": "تاوني (Tawny)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">31 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "tatweermisr",
+            "projects": [
+                {
+                    "name": "صن كابيتال",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">557 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 10 سنوات"
+                }
+            ]
+        }
+    ],
+    "north_coast": [
+        {
+            "dev": "emaar",
+            "projects": [
+                {
+                    "name": "مراسي (Marassi)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">1500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 8 سنوات"
+                },
+                {
+                    "name": "سول (Soul)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">580 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "palmhills",
+            "projects": [
+                {
+                    "name": "هاسيندا باي",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">593 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 6 سنوات"
+                },
+                {
+                    "name": "هاسيندا ويست",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">137 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "mountainview",
+            "projects": [
+                {
+                    "name": "ماونتن فيو رأس الحكمة",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">428 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 8 سنوات"
+                },
+                {
+                    "name": "لفلز (LVLS)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">200 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "sodic",
+            "projects": [
+                {
+                    "name": "جون (June)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">280 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "ora",
+            "projects": [
+                {
+                    "name": "سيلفر ساندز",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 6 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "alahlysabbour",
+            "projects": [
+                {
+                    "name": "جايا (Gaia)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">280 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 9 سنوات"
+                },
+                {
+                    "name": "أمواج",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">360 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 6 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "tatweermisr",
+            "projects": [
+                {
+                    "name": "فوكا باي",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">210 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 7 سنوات"
+                }
+            ]
+        }
+    ],
+    "sokhna": [
+        {
+            "dev": "tatweermisr",
+            "projects": [
+                {
+                    "name": "إل مونتي جلالة",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">520 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 10 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "sodic",
+            "projects": [
+                {
+                    "name": "أزهى (Azha)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">380 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "palmhills",
+            "projects": [
+                {
+                    "name": "تلال السخنة",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">600 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 9 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "mountainview",
+            "projects": [
+                {
+                    "name": "ماونتن فيو السخنة",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">87 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 8 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "alahlysabbour",
+            "projects": [
+                {
+                    "name": "بياصيرا",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">78 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 7 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "misritalia",
+            "projects": [
+                {
+                    "name": "كاي (Kai)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">35 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 9 سنوات"
+                }
+            ]
+        }
+    ],
+    "new_capital": [
+        {
+            "dev": "nile",
+            "projects": [
+                {
+                    "name": "نايل بيزنس سيتي",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">7.8 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وتقسيط حتى 10 سنوات"
+                },
+                {
+                    "name": "تايكون تاور",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">جزء من نايل بيزنس سيتي</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 10 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "tmg",
+            "projects": [
+                {
+                    "name": "سيليا (Celia)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">500 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدمات بسيطة وفترات سداد تمتد حتى 14 سنة"
+                }
+            ]
+        },
+        {
+            "dev": "misritalia",
+            "projects": [
+                {
+                    "name": "البوسكو",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">200 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 9 سنوات"
+                },
+                {
+                    "name": "فينشي (Vinci)",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">110 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وأقساط حتى 9 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "cityedge",
+            "projects": [
+                {
+                    "name": "المقصد",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">211 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 5% وتقسيط حتى 10 سنوات"
+                }
+            ]
+        },
+        {
+            "dev": "alahlysabbour",
+            "projects": [
+                {
+                    "name": "سيناريو",
+                    "details": "<div class=\"space-y-4 text-right\">\n        <div><h4 class=\"text-navy font-bold mb-2\">مساحة المشروع:</h4><p class=\"text-gray-600 text-sm\">39 فدان</p></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">موقع المشروع بالتفصيل:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>يقع في موقع استراتيجي وحيوي</li><li>بالقرب من المحاور والطرق الرئيسية المباشرة</li><li>على بعد دقائق من أهم المدارس والجامعات الدولية</li><li>قريب جداً من أهم المراكز التجارية والمولات</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أنواع ومساحات الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>شقق سكنية عصرية بمساحات تبدأ من 90م إلى 200م</li><li>دوبلكس وبنتهاوس بمساحات من 200م إلى 300م</li><li>تاون هاوس وتوين هاوس بمساحات تبدأ من 250م</li><li>فيلات مستقلة فاخرة بمساحات تتجاوز 350م</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أسعار الوحدات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>الشقق تبدأ من 6,500,000 جنيه مصري</li><li>التاون هاوس يبدأ من 15,000,000 جنيه مصري</li><li>التوين هاوس يبدأ من 20,000,000 جنيه مصري</li><li>الفيلات المستقلة تبدأ من 30,000,000 جنيه مصري</li></ul></div>\n        <div><h4 class=\"text-navy font-bold mb-2\">أفضل 10 مميزات وخدمات:</h4><ul class=\"list-disc list-inside text-gray-600 text-sm space-y-1\"><li>لاند سكيب ومساحات خضراء شاسعة تغطي 80% من المشروع</li><li>بحيرات صناعية (Crystal Lagoons) قابلة للسباحة</li><li>نادي رياضي واجتماعي (Club House) مجهز بالكامل</li><li>منطقة تجارية (Strip Mall) تضم براندات عالمية</li><li>حمامات سباحة متعددة المستويات ومغطاة</li><li>تراك مخصص للجري وركوب الدراجات</li><li>نظام أمن وحراسة وكاميرات مراقبة 24/7</li><li>منطقة كيدز إيريا (Kids Area) مؤمنة للأطفال</li><li>جراجات تحت الأرض لمنع التكدس السطحي</li><li>عيادات طبية وصيدليات تعمل على مدار الساعة</li></ul></div>\n    </div>",
+                    "payment": "مقدم 10% وأقساط حتى 8 سنوات"
+                }
+            ]
+        }
+    ]
+};
+
+        let currentDestKey = '';
+        let currentDestName = '';
+
+        function showDestinationProjects(destKey, destName) {
+            currentDestKey = destKey;
+            currentDestName = destName;
+
+            document.getElementById('destinations-view').classList.add('hidden');
+            document.getElementById('developers-view').classList.remove('hidden');
+            document.getElementById('projects-view').classList.add('hidden');
+            
+            document.getElementById('developers-dest-title').innerText = destName;
+            
+            const select = document.getElementById('interest');
+            if(select && select.querySelector(`option[value="${destKey}"]`)) {
+                select.value = destKey;
+            }
+
+            const grid = document.getElementById('developers-grid');
+            grid.innerHTML = '';
+
+            const destDevs = destinationsData[destKey] || [];
+            
+            destDevs.forEach(devEntry => {
+                const devKey = devEntry.dev;
+                const profile = developersProfiles[devKey] || {name: devKey, desc: '', payment: ''};
+                const logoUrl = getLogo(devKey);
+                
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col group cursor-pointer';
+                card.onclick = () => showDeveloperProjects(devKey, profile.name, devEntry.projects, profile.payment);
+                
+                card.innerHTML = `
+                    <div class="flex flex-col sm:flex-row h-full">
+                        <div class="sm:w-2/5 p-6 flex items-center justify-center bg-gray-50 border-b sm:border-b-0 sm:border-l border-gray-100 group-hover:bg-gray-100 transition-colors">
+                            <img src="${logoUrl}" alt="${profile.name}" class="w-24 h-24 sm:w-32 sm:h-32 object-contain filter drop-shadow-sm" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=' + encodeURIComponent(devKey) + '&background=0A192F&color=D4AF37&size=256'">
+                        </div>
+                        <div class="sm:w-3/5 p-6 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">${profile.name}</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">${profile.desc}</p>
+                            <div class="mt-auto inline-block bg-gold/10 text-gold px-4 py-2 rounded-lg text-sm font-bold border border-gold/20 flex items-center gap-2">
+                                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span class="truncate">${profile.payment}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            
+            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function showDeveloperProjects(devKey, devName, projectsArray, devPayment) {
+            document.getElementById('developers-view').classList.add('hidden');
+            document.getElementById('projects-view').classList.remove('hidden');
+            document.getElementById('destination-title').innerText = `${devName} في ${currentDestName}`;
+
+            const grid = document.getElementById('projects-grid');
+            grid.innerHTML = '';
+
+            projectsArray.forEach(project => {
+                const projectImg = getProjectImage(project.name);
+                
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-2xl overflow-hidden shadow border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col group cursor-pointer';
+                card.onclick = () => openProjectModal(project.name, projectImg, devName, project.details, project.payment || devPayment);
+                
+                card.innerHTML = `
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="${projectImg}" alt="${project.name}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                        <div class="absolute bottom-4 right-4 left-4">
+                            <span class="bg-gold text-navy text-xs font-bold px-2 py-1 rounded mb-2 inline-block shadow-sm">${devName}</span>
+                            <h3 class="text-xl font-bold text-white shadow-sm">${project.name}</h3>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col bg-white relative z-10 border-t border-gray-100">
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4 flex-1 line-clamp-2">${project.details}</p>
+                        <button class="w-full text-center bg-gray-50 hover:bg-navy hover:text-white text-navy font-bold py-3 rounded-lg transition-colors border border-gray-100 flex justify-center items-center gap-2 group-hover:shadow-md">
+                            تصفح التفاصيل
+                            <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            
+            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function openProjectModal(title, image, devName, desc, payment) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-img').src = image;
+            document.getElementById('modal-dev-badge').innerText = devName;
+            document.getElementById('modal-location').querySelector('span').innerText = currentDestName;
+            document.getElementById('modal-desc').innerHTML = desc;
+            document.getElementById('modal-payment').innerText = payment;
+            
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('hidden');
+            void modal.offsetWidth;
+            modal.classList.remove('opacity-0');
+            document.getElementById('project-modal-content').classList.remove('scale-95');
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('opacity-0');
+            document.getElementById('project-modal-content').classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        function registerInterest() {
+            closeModal();
+            setTimeout(() => {
+                document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+            }, 300);
+        }
+
+        function backToDestinations() {
+            document.getElementById('developers-view').classList.add('hidden');
+            document.getElementById('destinations-view').classList.remove('hidden');
+            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function backToDevelopers() {
+            document.getElementById('projects-view').classList.add('hidden');
+            document.getElementById('developers-view').classList.remove('hidden');
+            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-navy/80 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="bg-white rounded-3xl overflow-hidden shadow-2xl relative w-full max-w-4xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col" id="project-modal-content">
+            <button onclick="closeModal()" class="absolute top-4 left-4 z-10 w-10 h-10 bg-black/20 hover:bg-black/40 text-white rounded-full flex items-center justify-center transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="relative h-64 sm:h-80 w-full flex-shrink-0">
+                <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 right-6 left-6 flex items-end justify-between">
+                    <div>
+                        <span id="modal-dev-badge" class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block shadow-sm"></span>
+                        <h2 id="modal-title" class="text-3xl md:text-4xl font-bold text-white mb-2 shadow-sm drop-shadow-md"></h2>
+                        <p id="modal-location" class="text-gray-300 font-medium flex items-center gap-2 drop-shadow-md">
+                            <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-6 sm:p-8 flex-1 overflow-y-auto bg-gray-50">
+                <h3 class="text-xl font-bold text-navy mb-4 border-b border-gray-200 pb-2">عن المشروع</h3>
+                <p id="modal-desc" class="text-gray-600 leading-relaxed mb-8 text-lg"></p>
+                
+                <h3 class="text-xl font-bold text-navy mb-4 border-b border-gray-200 pb-2">خطة السداد</h3>
+                <div class="bg-white border border-gray-200 shadow-sm rounded-xl p-4 flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center text-gold shadow-sm shrink-0 border border-gold/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <p id="modal-payment" class="text-navy font-bold text-lg"></p>
+                </div>
+                
+                <button onclick="registerInterest()" class="w-full bg-gold hover:bg-navy text-navy hover:text-white font-bold py-4 rounded-xl transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2 text-lg group">
+                    سجل اهتمامك بهذا المشروع
+                    <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
