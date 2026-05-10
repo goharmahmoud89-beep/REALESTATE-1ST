@@ -5,15 +5,17 @@ const path = require('path');
 const assetsDir = path.join(__dirname, 'assets');
 
 fs.readdirSync(assetsDir).forEach(file => {
-    if (file.endsWith('.png')) {
+    if (file.endsWith('.avif')) {
         const inputPath = path.join(assetsDir, file);
-        const outputPath = path.join(assetsDir, file.replace('.png', '.webp'));
+        const outputPath = path.join(assetsDir, file.replace('.avif', '.webp'));
         
         sharp(inputPath)
             .webp({ quality: 80 })
             .toFile(outputPath)
             .then(info => {
                 console.log(`Converted ${file} to WEBP`);
+                // Optionally delete the avif to save space
+                fs.unlinkSync(inputPath);
             })
             .catch(err => {
                 console.error(`Error converting ${file}:`, err);
